@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    width: 100%;
+    min-height: 200vh;
+    background: linear-gradient(135deg, #e22c59, #12107d);
+    padding: 10px;
+  }
+  
+  .To-Do {
+    width: 60%;
+    max-width: 540%;
+    background: #fff;
+    margin: 100px auto 25px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+  }
+  
+  .To-Do h2 {
+    color: #e22c59;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .To-Do h2 img {
+    width: 30px;
+    margin-left: 20px;
+  }
+  
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #66a856;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    border-radius: 30px;
+  }
+  
+  input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+  }
+  
+  button {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 30px;
+  }
+  
+  .delete-btn {
+    padding: 5px 10px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-left: 10px;
+  }
+  
+  ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    border-radius: 50px;
+    background-image: url(unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+  }
+  
+  ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+  }
+  
+  ul li.checked::before {
+    background-image: url(checked.png);
+  }
+  
